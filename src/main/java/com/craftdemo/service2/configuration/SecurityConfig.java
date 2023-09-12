@@ -16,7 +16,6 @@ public class SecurityConfig extends WebSecurityConfig {
     private CustomAuthEntryPoint customAuthEntryPoint;
 
     @Bean
-    @Order
     public SecurityFilterChain apiSecurityFilterChain(HttpSecurity http) throws Exception {
         return super.apiSecurityFilterChain(http);
     }

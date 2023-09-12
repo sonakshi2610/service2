@@ -15,7 +15,6 @@ public class RequestFiltersConfig {
     public FilterRegistrationBean<TracingFilter> tracingFilter() {
         FilterRegistrationBean<TracingFilter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new TracingFilter());
-        registrationBean.setFilter(new TracingFilter());
         registrationBean.setOrder(1);
         registrationBean.addUrlPatterns("/*");
         return registrationBean;
@@ -24,7 +23,6 @@ public class RequestFiltersConfig {
     @Bean
     public FilterRegistrationBean<LoggingFilter> loggingFilter() {
         FilterRegistrationBean<LoggingFilter> registrationBean = new FilterRegistrationBean<>();
-        registrationBean.setFilter(new LoggingFilter());
         registrationBean.setFilter(new LoggingFilter());
         registrationBean.setOrder(2);
         registrationBean.addUrlPatterns("/*");
