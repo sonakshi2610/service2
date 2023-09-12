@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Component
-public class CustomAuthEntryPoint extends com.craftdemo.requestfilter.CustomAuthEntryPoint {
+public class CustomAuthEntryPoint extends com.craftdemo.requestfilter.security.CustomAuthEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException ex)
